@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>contact</title>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+       
+   </head>
+   <body>
+      <div class="container"></div>
+        <header class="main-header">
+         <h1>Food & Food</h1> 
+                <ul class="menu-flex">
+                    <li class="menu"><a href="index2.html">HOME</a></li>
+                    <li class="menu"><a href="contact.html">contact</a></li>
+                    <li class="menu"><a href="about.html">about</a></li>
+                </ul>
+        </header>
+      <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Votre nom <span class="required">:</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse e-mail <span class="required">:</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">:</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"  cols="20" rows="20"  ></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Envoyer">      
+                  <input type="reset" value="R�initialiser"> 
+               </td>
+            </tr>
+         </table>
+      </form>
+      <script src="js/contact.js"> 
+      </script>
+   </body>
+</html>
